@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema PDV</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard - Sistema PDV</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="sales-chart">
+                <h2>Vendas por Produto</h2>
+                <canvas id="product-sales-chart"></canvas>
+            </section>
+
+            <section id="total-sales">
+                <h2>Total de Vendas</h2>
+                <div id="total-sales-value">R$ 0,00</div>
+            </section>
+
+            <section id="payment-rank">
+                <h2>Rank de Meios de Pagamento</h2>
+                <ul id="payment-rank-list">
+                    
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+    <canvas id="myChart"></canvas>
+<script src="app.js"></script>
+
+</body>
+</html>

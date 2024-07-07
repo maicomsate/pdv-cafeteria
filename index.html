@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema PDV - Cafeteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema PDV - Cafeteria</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div id="cart-icon">🛒 <span id="cart-badge">0</span></div>
+        </header>
+
+        <main>
+            <h2>Produtos Disponíveis</h2>
+            <div id="product-grid" class="grid"></div>
+
+            <div id="cart-menu">
+                <h2>Carrinho</h2>
+                <div id="cart-items"></div>
+                <div id="cart-total">Total: R$ 0,00</div>
+                <select id="payment-method">
+                    <option value="credit">Crédito</option>
+                    <option value="debit">Débito</option>
+                    <option value="pix">PIX</option>
+                    <option value="cash">Dinheiro</option>
+                </select>
+                <div id="cash-payment">
+                    <input type="number" id="cash-amount" placeholder="Valor em dinheiro" step="0.01">
+                    <div id="change"></div>
+                </div>
+                <button id="process-payment">Processar Pagamento</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

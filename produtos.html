@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos - Sistema PDV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciamento de Produtos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Adicionar Novo Produto</h2>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                <input type="number" id="product-price" placeholder="Preço" step="0.01" required>
+                <input type="number" id="product-stock" placeholder="Estoque" required>
+                <select id="product-category">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="salgados">Salgados</option>
+                    <option value="doces">Doces</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+
+            <h2>Lista de Produtos</h2>
+            <div id="product-list"></div>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="produtos.js"></script>
+</body>
+</html>
